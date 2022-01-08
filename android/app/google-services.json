@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "30773421",
+    "project_id": "thesniffapp",
+    "storage_bucket": "thesniffapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:30773421:android:825c21db5b3c3efd367624",
+        "android_client_info": {
+          "package_name": "com.thesniffapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "30773421-j8ut5bu72u4u6152etu987pjb6t4p2g3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thesniffapp",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "30773421-vlaafl0gfeahbp8vi7raddh82dacjddh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxUjPUnIN4znjTjYLzDpmfF6BC2baWjRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "30773421-vlaafl0gfeahbp8vi7raddh82dacjddh.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "30773421-qp3trene80247fik5vg3e44p12revv6q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.thesniffapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
