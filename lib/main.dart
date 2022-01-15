@@ -102,9 +102,18 @@ class _NavBarPageState extends State<NavBarPage> {
       'chatMain': ChatMainWidget(),
       'profilePage': ProfilePageWidget(),
     };
+    final currentIndex = tabs.keys.toList().indexOf(_currentPage);
     return Scaffold(
       body: tabs[_currentPage],
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: currentIndex,
+        onTap: (i) => setState(() => _currentPage = tabs.keys.toList()[i]),
+        backgroundColor: FlutterFlowTheme.primaryColor,
+        selectedItemColor: Color(0xFFBFBFBF),
+        unselectedItemColor: FlutterFlowTheme.grayIcon,
+        showSelectedLabels: true,
+        showUnselectedLabels: false,
+        type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(
@@ -139,14 +148,6 @@ class _NavBarPageState extends State<NavBarPage> {
             tooltip: '',
           )
         ],
-        backgroundColor: FlutterFlowTheme.primaryColor,
-        currentIndex: tabs.keys.toList().indexOf(_currentPage),
-        selectedItemColor: Color(0xFFBFBFBF),
-        unselectedItemColor: FlutterFlowTheme.grayIcon,
-        onTap: (i) => setState(() => _currentPage = tabs.keys.toList()[i]),
-        showSelectedLabels: true,
-        showUnselectedLabels: false,
-        type: BottomNavigationBarType.fixed,
       ),
     );
   }

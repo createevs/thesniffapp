@@ -33,7 +33,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
     'iconOnActionTriggerAnimation': AnimationInfo(
       trigger: AnimationTrigger.onActionTrigger,
       duration: 600,
-      scale: 1.3,
+      initialState: AnimationState(
+        scale: 1.3,
+        opacity: 0,
+      ),
+      finalState: AnimationState(
+        scale: 1,
+        opacity: 1,
+      ),
     ),
   };
   final scaffoldKey = GlobalKey<ScaffoldState>();
@@ -533,10 +540,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                       .reference
                                                                       .update(
                                                                           userPostsUpdateData);
-                                                                  final animation =
-                                                                      animationsMap[
-                                                                          'iconOnActionTriggerAnimation'];
-                                                                  await (animation
+                                                                  await (animationsMap['iconOnActionTriggerAnimation']
                                                                               .curvedAnimation
                                                                               .parent
                                                                           as AnimationController)
